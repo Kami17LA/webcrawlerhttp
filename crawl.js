@@ -1,7 +1,9 @@
 function normalizeURL(urlString){
-    return urlString
+  return urlString
 }
 
-module.exports = (
-    normalizeURLnp
-)
+module.exports.normalizeURL = normalizeURL;
+
+/* module.exports = (
+    normalizeURL
+) */
