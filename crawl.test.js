@@ -70,8 +70,7 @@ test("getURLsFromHTML relative", () => {
 	expect(actual).toEqual(expected);
 });
 
-
-//Test 2
+//Test 3
 test("getURLsFromHTML both", () => {
 	const inputHTMLBody = `
 		<html>
@@ -89,5 +88,22 @@ test("getURLsFromHTML both", () => {
 	const inputBaseURL = "https://blog.boot.dev";
 	const actual = getURLsFromHTML(inputHTMLBody, inputBaseURL);
 	const expected = ["https://blog.boot.dev/path1/", "https://blog.boot.dev/path2/"];
+	expect(actual).toEqual(expected);
+});
+
+//Test 4
+test("getURLsFromHTML relative", () => {
+	const inputHTMLBody = `
+		<html>
+			<body>
+				<a href = "invalid">
+					Invalid URL
+				</a>
+			</body>
+		</html>
+	`;
+	const inputBaseURL = "https://blog.boot.dev";
+	const actual = getURLsFromHTML(inputHTMLBody, inputBaseURL);
+	const expected = [];
 	expect(actual).toEqual(expected);
 });
