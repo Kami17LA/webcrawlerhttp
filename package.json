@@ -1,0 +1,23 @@
+{
+  "name": "webcrawlerhttp",
+  "version": "1.0.0",
+  "description": "Web Crawler Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "just"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kami17LA/webcrawlerhttp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kami17LA/webcrawlerhttp/issues"
+  },
+  "homepage": "https://github.com/Kami17LA/webcrawlerhttp#readme",
+  "dependencies": {
+    "jest": "^29.4.3"
+  }
+}
